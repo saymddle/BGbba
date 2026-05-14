@@ -1,0 +1,127 @@
+# Decap CMS Configuration — Black Girl Boba
+# Docs: https://decapcms.org/docs/
+
+backend:
+  name: git-gateway      # Uses Netlify Identity + Git Gateway
+  branch: main           # Branch to commit changes to
+
+media_folder: "images/uploads"   # Where uploaded images are stored
+public_folder: "/images/uploads" # Public URL prefix for images
+
+# ── Collections ─────────────────────────────────────────────────
+
+collections:
+
+  # ── Menu Items ────────────────────────────────────────────────
+  - name: "menu"
+    label: "Menu"
+    files:
+      - label: "Menu Items"
+        name: "menu_items"
+        file: "data/menu.json"
+        format: json
+        fields:
+          - label: "Menu Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields:
+              - { label: "ID (no spaces, use dashes)",   name: "id",          widget: "string" }
+              - { label: "Drink Name",                   name: "name",        widget: "string" }
+              - { label: "Price (numbers only, e.g. 7.50)", name: "price",   widget: "string" }
+              - { label: "Description",                  name: "description", widget: "text" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Milk Tea",          value: "milk" }
+                  - { label: "Fruit Tea",          value: "fruit" }
+                  - { label: "Smoothie",           value: "smoothie" }
+                  - { label: "Coffee Boba",        value: "coffee" }
+                  - { label: "Seasonal Special",   value: "season" }
+              - label: "Tags"
+                name: "tags"
+                widget: "select"
+                multiple: true
+                required: false
+                options:
+                  - { label: "Popular",   value: "popular" }
+                  - { label: "Vegan",     value: "vegan" }
+                  - { label: "New",       value: "new" }
+                  - { label: "Seasonal",  value: "seasonal" }
+              - label: "Show on Home Page (Fan Favorites)"
+                name: "featured"
+                widget: "boolean"
+                default: false
+
+  # ── Shop Items ────────────────────────────────────────────────
+  - name: "shop"
+    label: "Shop"
+    files:
+      - label: "Shop Items"
+        name: "shop_items"
+        file: "data/shop.json"
+        format: json
+        fields:
+          - label: "Shop Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}} — ${{fields.price}}"
+            fields:
+              - { label: "ID (no spaces, use dashes)", name: "id",          widget: "string" }
+              - { label: "Product Name",               name: "name",        widget: "string" }
+              - { label: "Price (numbers only)",       name: "price",       widget: "string" }
+              - { label: "Description",                name: "description", widget: "text" }
+              - label: "Icon"
+                name: "icon"
+                widget: "select"
+                options:
+                  - { label: "T-Shirt",      value: "tshirt" }
+                  - { label: "Tote Bag",     value: "tote-bag" }
+                  - { label: "Hat",          value: "hat" }
+                  - { label: "Tumbler",      value: "tumbler" }
+                  - { label: "Stickers",     value: "stickers" }
+                  - { label: "Journal",      value: "journal" }
+                  - { label: "Gift Box",     value: "gift" }
+              - label: "Card Background"
+                name: "bgClass"
+                widget: "select"
+                options:
+                  - { label: "Light Green",  value: "bg-pale" }
+                  - { label: "Warm Cream",   value: "bg-warm" }
+                  - { label: "Dark Green",   value: "bg-dark" }
+              - { label: "Icon Color (CSS value, e.g. var(--green-dark))", name: "iconColor", widget: "string", required: false }
+
+  # ── Site Settings ─────────────────────────────────────────────
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Site Settings"
+        name: "site_settings"
+        file: "data/settings.json"
+        format: json
+        fields:
+          - label: "Truck Schedule"
+            name: "schedule"
+            widget: "list"
+            summary: "{{fields.days}} — {{fields.location}}"
+            fields:
+              - { label: "Days (e.g. Mon – Tue)",     name: "days",     widget: "string" }
+              - { label: "Location",                   name: "location", widget: "string" }
+              - { label: "Hours (e.g. 11am–6pm)",     name: "hours",    widget: "string" }
+          - { label: "Announcement (shown under Find The Truck)", name: "announcement", widget: "string" }
+          - label: "Social Media Links"
+            name: "socials"
+            widget: "object"
+            fields:
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "TikTok URL",    name: "tiktok",    widget: "string", required: false }
+              - { label: "Twitter URL",   name: "twitter",   widget: "string", required: false }
+              - { label: "Facebook URL",  name: "facebook",  widget: "string", required: false }
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email",    name: "email", widget: "string" }
+              - { label: "City",     name: "city",  widget: "string" }
+          - { label: "Free Shipping Threshold (number only, e.g. 50)", name: "shipping_threshold", widget: "string" }

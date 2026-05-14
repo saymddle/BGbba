@@ -1,0 +1,20 @@
+{
+  "schedule": [
+    { "days": "Mon – Tue", "location": "Downtown Augusta", "hours": "11am–6pm" },
+    { "days": "Wednesday", "location": "Augusta Mall", "hours": "12pm–7pm" },
+    { "days": "Thu – Fri", "location": "Broad Street", "hours": "11am–8pm" },
+    { "days": "Sat – Sun", "location": "Riverwalk", "hours": "10am–9pm" }
+  ],
+  "announcement": "Follow @blackgirlboba for daily location updates!",
+  "socials": {
+    "instagram": "https://instagram.com/blackgirlboba",
+    "tiktok": "",
+    "twitter": "",
+    "facebook": ""
+  },
+  "contact": {
+    "email": "hello@blackgirlboba.com",
+    "city": "Augusta, GA"
+  },
+  "shipping_threshold": "50"
+}

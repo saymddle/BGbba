@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "tumbler",
+      "name": "BGB Tumbler",
+      "price": "38",
+      "description": "40oz insulated tumbler with our logo. Keeps boba cold for hours.",
+      "photo": "/images/tumbler.png"
+    },
+    {
+      "id": "tote-bag",
+      "name": "BGB Tote Bag",
+      "price": "22",
+      "description": "Organic cotton canvas tote with our \"Boba & Good Vibes\" logo.",
+      "photo": "/images/more-than-just-boba.png"
+    }
+  ]
+}

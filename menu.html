@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Black Girl Boba</title>
+  <meta name="description" content="View the full Black Girl Boba menu — milk teas, fruit teas, smoothies, coffee boba, and seasonal specials. Made fresh to order.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=2">
+</head>
+<body data-page="menu">
+
+<!-- ============ SVG SYMBOL DEFS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="cup-outline" viewBox="0 0 60 70">
+      <path d="M 12 14 L 48 14 L 44 64 Q 30 68 16 64 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M 10 14 Q 30 10 50 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 14 11 L 14 5 Q 14 3 16 3 L 18 3 Q 20 3 20 5 L 20 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 38 11 L 38 5 Q 38 3 40 3 L 42 3 Q 44 3 44 5 L 44 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cup-with-straw" viewBox="0 0 60 70">
+      <path d="M 10 18 L 50 18 L 45 64 Q 30 68 15 64 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M 8 18 Q 30 14 52 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="35" y1="18" x2="42" y2="2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="22" cy="50" r="2.5" fill="currentColor"/><circle cx="30" cy="55" r="2.5" fill="currentColor"/>
+      <circle cx="38" cy="50" r="2.5" fill="currentColor"/><circle cx="26" cy="60" r="2.5" fill="currentColor"/>
+      <circle cx="34" cy="60" r="2.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="tshirt" viewBox="0 0 140 140">
+      <path d="M 30 35 L 10 50 L 20 65 L 35 55 L 35 125 L 105 125 L 105 55 L 120 65 L 130 50 L 110 35 L 90 30 Q 85 38 70 38 Q 55 38 50 30 Z" fill="currentColor" stroke="#2d3d1f" stroke-width="2.2" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="tumbler" viewBox="0 0 100 160">
+      <path d="M 25 25 L 30 145 Q 50 152 70 145 L 75 25 Z" fill="currentColor" stroke="#2d3d1f" stroke-width="2.2"/>
+      <ellipse cx="50" cy="25" rx="25" ry="6" fill="currentColor" stroke="#2d3d1f" stroke-width="2.2"/>
+    </symbol>
+    <symbol id="hat" viewBox="0 0 140 100">
+      <path d="M 30 60 Q 40 25 70 25 Q 100 25 110 60 L 105 70 Q 70 78 35 70 Z" fill="currentColor" stroke="#2d3d1f" stroke-width="2.2"/>
+      <path d="M 20 70 Q 70 85 120 70 L 115 80 Q 70 92 25 80 Z" fill="currentColor" stroke="#2d3d1f" stroke-width="2.2"/>
+    </symbol>
+    <symbol id="tote-bag" viewBox="0 0 140 160">
+      <path d="M 20 50 L 30 150 Q 70 156 110 150 L 120 50 Z" fill="#f0eadb" stroke="#2d3d1f" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M 45 50 Q 45 25 70 25 Q 95 25 95 50" fill="none" stroke="#2d3d1f" stroke-width="2.2" stroke-linecap="round"/>
+      <text x="70" y="82" text-anchor="middle" font-family="Caveat Brush, cursive" font-size="14" fill="#2d3d1f">BGB</text>
+    </symbol>
+    <symbol id="stickers" viewBox="0 0 140 140">
+      <rect x="25" y="25" width="40" height="40" rx="6" fill="#c4d3a8" stroke="#2d3d1f" stroke-width="2" transform="rotate(-8 45 45)"/>
+      <rect x="70" y="20" width="40" height="40" rx="6" fill="#f5f2e8" stroke="#2d3d1f" stroke-width="2" transform="rotate(5 90 40)"/>
+      <rect x="30" y="75" width="40" height="40" rx="6" fill="#f5f2e8" stroke="#2d3d1f" stroke-width="2" transform="rotate(6 50 95)"/>
+      <rect x="75" y="80" width="40" height="40" rx="6" fill="#c4d3a8" stroke="#2d3d1f" stroke-width="2" transform="rotate(-4 95 100)"/>
+    </symbol>
+    <symbol id="journal" viewBox="0 0 120 140">
+      <rect x="20" y="15" width="80" height="115" rx="4" fill="#f0eadb" stroke="#2d3d1f" stroke-width="2.2"/>
+      <line x1="30" y1="15" x2="30" y2="130" stroke="#2d3d1f" stroke-width="2.2"/>
+      <text x="65" y="78" text-anchor="middle" font-family="Caveat Brush, cursive" font-size="16" fill="#2d3d1f">BGB</text>
+    </symbol>
+    <symbol id="gift" viewBox="0 0 140 140">
+      <rect x="20" y="50" width="100" height="80" fill="currentColor" stroke="#2d3d1f" stroke-width="2.2"/>
+      <rect x="15" y="40" width="110" height="20" fill="currentColor" stroke="#2d3d1f" stroke-width="2.2"/>
+      <line x1="70" y1="40" x2="70" y2="130" stroke="#2d3d1f" stroke-width="2.2"/>
+      <path d="M 50 40 Q 40 20 50 15 Q 60 18 70 40 Q 80 18 90 15 Q 100 20 90 40" fill="none" stroke="#2d3d1f" stroke-width="2.2" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<nav id="site-nav">
+  <div class="nav-inner">
+    <a class="brand-logo" href="/index.html"><img src="/images/logo.png" alt="Black Girl Boba" class="brand-logo-img"></a>
+    <div class="nav-cups">
+      <a class="nav-cup" href="/index.html" data-nav="home">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Home</span>
+      </a>
+      <a class="nav-cup" href="/menu.html" data-nav="menu">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Menu</span>
+      </a>
+      <a class="nav-cup" href="/story.html" data-nav="story">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Our<br>Story</span>
+      </a>
+      <a class="nav-cup" href="/shop.html" data-nav="shop">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Shop</span>
+      </a>
+      <a class="nav-cup" href="/catering.html" data-nav="catering">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Catering</span>
+      </a>
+    </div>
+    <a class="order-pill" href="/menu.html">Order Now</a>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ MOBILE NAV DRAWER ============ -->
+<div class="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mobile-nav-close" aria-label="Close menu">✕</button>
+  <div class="mobile-nav-logo"><img src="/images/logo.png" alt="Black Girl Boba" class="mobile-logo-img"></div>
+  <a href="/index.html"    data-nav="home">Home</a>
+  <a href="/menu.html"     data-nav="menu">Menu</a>
+  <a href="/story.html"    data-nav="story">Our Story</a>
+  <a href="/shop.html"     data-nav="shop">Shop</a>
+  <a href="/catering.html" data-nav="catering">Catering</a>
+  <a href="/menu.html" class="mobile-order-pill">Order Now</a>
+</div>
+
+<!-- ============ PAGE CONTENT ============ -->
+<main>
+  <div class="page-hero">
+    <h1 class="page-hero-title">Our Menu</h1>
+    <p class="page-hero-sub">Every sip. Every vibe. Made fresh to order, just for you.</p>
+  </div>
+
+  <div class="menu-tabs">
+    <button class="menu-tab active" data-cat="all">All Drinks</button>
+    <button class="menu-tab" data-cat="milk">Milk Teas</button>
+    <button class="menu-tab" data-cat="fruit">Fruit Teas</button>
+    <button class="menu-tab" data-cat="smoothie">Smoothies</button>
+    <button class="menu-tab" data-cat="coffee">Coffee Boba</button>
+    <button class="menu-tab" data-cat="season">✦ Seasonal</button>
+  </div>
+
+  <div id="menu-content">
+    <div class="menu-section">
+      <p class="loading-placeholder">Loading menu…</p>
+    </div>
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="site-footer">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">Black<br>Girl Boba</div>
+        <div class="foot-tag">Boba Tea &amp; Good Vibes ✦</div>
+        <p class="foot-blurb">Augusta's favorite boba food truck, serving fresh-made drinks and community energy one cup at a time.</p>
+        <div class="socials">
+          <a id="foot-instagram" class="social-btn" href="#" aria-label="Instagram">📸</a>
+          <a id="foot-tiktok"    class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          <a id="foot-twitter"   class="social-btn" href="#" aria-label="Twitter">🐦</a>
+          <a id="foot-facebook"  class="social-btn" href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-col-title">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/story.html">Our Story</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/catering.html">Catering</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-title">Info</div>
+        <ul class="foot-links">
+          <li><a href="/index.html#schedule">Find The Truck</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Allergen Info</a></li>
+          <li><a href="#">Press &amp; Media</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-title">Connect</div>
+        <ul class="foot-links">
+          <li><a href="#">@blackgirlboba</a></li>
+          <li><a href="#">hello@blackgirlboba.com</a></li>
+          <li><a href="#">Augusta, GA</a></li>
+        </ul>
+        <div class="foot-news">
+          <div class="foot-news-title">Get Location Updates</div>
+          <form id="newsletter-form">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Black Girl Boba · Augusta, GA · All rights reserved</p>
+      <p>Made with 🧋 and a lot of love</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"><span id="toast-msg"></span></div>
+
+<script src="/js/main.js?v=2"></script>
+<script src="/js/menu.js?v=2"></script>
+<script>loadMenu();</script>
+</body>
+</html>

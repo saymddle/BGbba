@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story — Black Girl Boba</title>
+  <meta name="description" content="The story behind Black Girl Boba — a dream brewed from community, culture, and a deep love for good tea and good people.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=2">
+</head>
+<body data-page="story">
+
+<!-- ============ SVG SYMBOL DEFS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="cup-outline" viewBox="0 0 60 70">
+      <path d="M 12 14 L 48 14 L 44 64 Q 30 68 16 64 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M 10 14 Q 30 10 50 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 14 11 L 14 5 Q 14 3 16 3 L 18 3 Q 20 3 20 5 L 20 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 38 11 L 38 5 Q 38 3 40 3 L 42 3 Q 44 3 44 5 L 44 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cup-with-straw" viewBox="0 0 60 70">
+      <path d="M 10 18 L 50 18 L 45 64 Q 30 68 15 64 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M 8 18 Q 30 14 52 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="35" y1="18" x2="42" y2="2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="22" cy="50" r="2.5" fill="currentColor"/><circle cx="30" cy="55" r="2.5" fill="currentColor"/>
+      <circle cx="38" cy="50" r="2.5" fill="currentColor"/><circle cx="26" cy="60" r="2.5" fill="currentColor"/>
+      <circle cx="34" cy="60" r="2.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="leaves" viewBox="0 0 100 120">
+      <path d="M 50 10 Q 30 30 30 60 Q 30 80 50 90" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 50 15 Q 30 25 15 25 Q 25 35 35 35 Q 30 30 28 25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M 45 30 Q 25 35 12 40 Q 22 50 35 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M 40 50 Q 20 55 8 60 Q 20 70 33 65" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M 38 70 Q 22 78 14 85 Q 25 92 38 85" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 30 30">
+      <path d="M 15 4 L 17 13 L 26 15 L 17 17 L 15 26 L 13 17 L 4 15 L 13 13 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="heart" viewBox="0 0 30 30">
+      <path d="M 15 24 Q 5 16 5 10 Q 5 5 10 5 Q 13 5 15 8 Q 17 5 20 5 Q 25 5 25 10 Q 25 16 15 24 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<nav id="site-nav">
+  <div class="nav-inner">
+    <a class="brand-logo" href="/index.html"><img src="/images/logo.png" alt="Black Girl Boba" class="brand-logo-img"></a>
+    <div class="nav-cups">
+      <a class="nav-cup" href="/index.html" data-nav="home">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Home</span>
+      </a>
+      <a class="nav-cup" href="/menu.html" data-nav="menu">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Menu</span>
+      </a>
+      <a class="nav-cup" href="/story.html" data-nav="story">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Our<br>Story</span>
+      </a>
+      <a class="nav-cup" href="/shop.html" data-nav="shop">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Shop</span>
+      </a>
+      <a class="nav-cup" href="/catering.html" data-nav="catering">
+        <img class="cup-svg" src="/images/cup-icon.png" alt="">
+        <span class="cup-label">Catering</span>
+      </a>
+    </div>
+    <a class="order-pill" href="/menu.html">Order Now</a>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ MOBILE NAV DRAWER ============ -->
+<div class="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation">
+  <button class="mobile-nav-close" aria-label="Close menu">✕</button>
+  <div class="mobile-nav-logo"><img src="/images/logo.png" alt="Black Girl Boba" class="mobile-logo-img"></div>
+  <a href="/index.html"    data-nav="home">Home</a>
+  <a href="/menu.html"     data-nav="menu">Menu</a>
+  <a href="/story.html"    data-nav="story">Our Story</a>
+  <a href="/shop.html"     data-nav="shop">Shop</a>
+  <a href="/catering.html" data-nav="catering">Catering</a>
+  <a href="/menu.html" class="mobile-order-pill">Order Now</a>
+</div>
+
+<!-- ============ PAGE CONTENT ============ -->
+<main>
+  <div class="page-hero">
+    <h1 class="page-hero-title">Our Story</h1>
+    <p class="page-hero-sub">A dream brewed from community, culture, and a deep love for good tea — and good people.</p>
+  </div>
+
+  <div class="story-wrap">
+    <div class="story-intro">Every cup tells a story. Here's ours. 🧋</div>
+
+    <div class="story-block">
+      <div class="story-block-tag">✦ The Beginning</div>
+      <div class="story-block-title">It Started With A Dream</div>
+      <div class="story-block-text">Black Girl Boba wasn't born in a boardroom — it was born in a kitchen, over laughter, late nights, and a lot of boba experimentation. What started as a passion for crafting the perfect cup of bubble tea grew into something so much bigger: a vision for a community-centered business that celebrates culture, creativity, and connection.</div>
+    </div>
+
+    <div class="story-block">
+      <div class="story-block-tag">✦ The Mission</div>
+      <div class="story-block-title">More Than Just Boba</div>
+      <div class="story-block-text">From day one, we knew this was about more than tea. Every cup we make is an opportunity to create a moment — of joy, of belonging, of saying "you matter here." Augusta deserves a boba spot that feels like home, that reflects the richness and vibrancy of this city and its people. That's exactly what we set out to build.</div>
+    </div>
+
+    <div class="story-quote">
+      <div class="story-quote-text">We didn't just open a food truck.<br>We opened a space for community, creativity, and good energy.</div>
+      <div class="story-quote-attr">— Founder, Black Girl Boba</div>
+    </div>
+
+    <div class="story-block">
+      <div class="story-block-tag">✦ The Craft</div>
+      <div class="story-block-title">Quality Is Non-Negotiable</div>
+      <div class="story-block-text">We source real ingredients — fresh fruit, premium loose-leaf teas, quality milks and non-dairy alternatives — and brew everything in-house, fresh daily. No syrups from a concentrate. No shortcuts. We spent months perfecting our tapioca pearls, our sugar ratios, our flavor profiles. Because when you sip Black Girl Boba, we want you to taste the difference.</div>
+    </div>
+
+    <div class="story-block">
+      <div class="story-block-tag">✦ The Future</div>
+      <div class="story-block-title">Sip By Sip, We're Growing</div>
+      <div class="story-block-text">What started as a food truck rolling through Augusta is just the beginning. We envision Black Girl Boba as a movement — expanding into a brick-and-mortar, hosting community events, partnering with local creatives and makers, and building a brand that Black girls (and everyone who loves them) can be proud of. The vibes are only getting better.</div>
+    </div>
+
+    <div style="margin-top:60px; text-align:center;">
+      <div style="font-family:'Caveat',cursive; font-size:1.25rem; color:var(--green-mid); margin-bottom:8px">✦ What We Stand For ✦</div>
+      <h2 style="font-family:'Caveat Brush',cursive; font-size:2.6rem; color:var(--green-dark); text-transform:uppercase; line-height:1.0; margin-bottom:28px">Our Values</h2>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <svg class="value-cup-icon" style="color:var(--green-dark)"><use href="#cup-with-straw"/></svg>
+        <div class="value-title">Community First</div>
+        <div class="value-text">We show up for Augusta and Augusta shows up for us. Every dollar spent here builds something bigger together.</div>
+      </div>
+      <div class="value-card">
+        <svg class="value-cup-icon" style="color:var(--green-dark)"><use href="#leaves"/></svg>
+        <div class="value-title">Real Ingredients</div>
+        <div class="value-text">We refuse to compromise on quality. Real tea, real fruit, real milk — because you deserve the real thing.</div>
+      </div>
+      <div class="value-card">
+        <svg class="value-cup-icon" style="color:var(--green-dark)"><use href="#star"/></svg>
+        <div class="value-title">Black Excellence</div>
+        <div class="value-text">A celebration of Black creativity, entrepreneurship, and culture. We exist to inspire and make space.</div>
+      </div>
+      <div class="value-card">
+        <svg class="value-cup-icon" style="color:var(--green-dark)"><use href="#heart"/></svg>
+        <div class="value-title">Good Energy</div>
+        <div class="value-text">From the way we greet you to the care in every cup, we pour good energy into everything we do.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="site-footer">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">Black<br>Girl Boba</div>
+        <div class="foot-tag">Boba Tea &amp; Good Vibes ✦</div>
+        <p class="foot-blurb">Augusta's favorite boba food truck, serving fresh-made drinks and community energy one cup at a time.</p>
+        <div class="socials">
+          <a id="foot-instagram" class="social-btn" href="#" aria-label="Instagram">📸</a>
+          <a id="foot-tiktok"    class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          <a id="foot-twitter"   class="social-btn" href="#" aria-label="Twitter">🐦</a>
+          <a id="foot-facebook"  class="social-btn" href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div>
+        <div class="foot-col-title">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/story.html">Our Story</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/catering.html">Catering</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-title">Info</div>
+        <ul class="foot-links">
+          <li><a href="/index.html#schedule">Find The Truck</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Allergen Info</a></li>
+          <li><a href="#">Press &amp; Media</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-title">Connect</div>
+        <ul class="foot-links">
+          <li><a href="#">@blackgirlboba</a></li>
+          <li><a href="#">hello@blackgirlboba.com</a></li>
+          <li><a href="#">Augusta, GA</a></li>
+        </ul>
+        <div class="foot-news">
+          <div class="foot-news-title">Get Location Updates</div>
+          <form id="newsletter-form">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Black Girl Boba · Augusta, GA · All rights reserved</p>
+      <p>Made with 🧋 and a lot of love</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"><span id="toast-msg"></span></div>
+
+<script src="/js/main.js?v=2"></script>
+</body>
+</html>

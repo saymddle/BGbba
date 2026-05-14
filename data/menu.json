@@ -1,0 +1,193 @@
+{
+  "items": [
+    {
+      "id": "classic-matcha",
+      "name": "Classic Matcha Milk Tea",
+      "price": "7.50",
+      "description": "Ceremonial grade matcha, oat milk, brown sugar syrup, tapioca pearls.",
+      "category": "milk",
+      "tags": ["popular", "vegan"],
+      "featured": true
+    },
+    {
+      "id": "brown-sugar-tiger",
+      "name": "Brown Sugar Tiger Milk",
+      "price": "7.75",
+      "description": "Tiger brown sugar swirls, fresh whole milk, handmade tapioca pearls.",
+      "category": "milk",
+      "tags": ["popular"],
+      "featured": true
+    },
+    {
+      "id": "taro-milk-tea",
+      "name": "Taro Milk Tea",
+      "price": "7.50",
+      "description": "Fresh taro root, whole milk, coconut cream, classic tapioca pearls.",
+      "category": "milk",
+      "tags": ["popular"],
+      "featured": false
+    },
+    {
+      "id": "jasmine-milk-tea",
+      "name": "Jasmine Milk Tea",
+      "price": "6.75",
+      "description": "Brewed jasmine green tea, oat milk, honey, tapioca pearls.",
+      "category": "milk",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "roasted-oolong",
+      "name": "Roasted Oolong Latte",
+      "price": "7.25",
+      "description": "Roasted oolong tea, steamed oat milk, light honey, tapioca pearls.",
+      "category": "milk",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "thai-milk-tea",
+      "name": "Thai Milk Tea",
+      "price": "7.50",
+      "description": "Strong brewed Thai tea, condensed milk, evaporated milk, tapioca pearls.",
+      "category": "milk",
+      "tags": ["popular"],
+      "featured": false
+    },
+    {
+      "id": "strawberry-cream",
+      "name": "Strawberry Cream Boba",
+      "price": "7.50",
+      "description": "Real strawberry purée, coconut cream, popping boba, strawberry pearls.",
+      "category": "fruit",
+      "tags": ["popular", "vegan"],
+      "featured": true
+    },
+    {
+      "id": "passion-fruit-green",
+      "name": "Passion Fruit Green Tea",
+      "price": "7.00",
+      "description": "Brewed green tea, passion fruit syrup, lemon, popping boba.",
+      "category": "fruit",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "lemon-honey-oolong",
+      "name": "Lemon Honey Oolong",
+      "price": "7.00",
+      "description": "Brewed oolong, fresh lemon, wildflower honey, aloe vera jelly cubes.",
+      "category": "fruit",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "lychee-rose-tea",
+      "name": "Lychee Rose Tea",
+      "price": "7.25",
+      "description": "Hibiscus rose tea, lychee syrup, coconut jelly, lychee popping pearls.",
+      "category": "fruit",
+      "tags": ["vegan", "popular"],
+      "featured": false
+    },
+    {
+      "id": "peach-jasmine",
+      "name": "Peach Jasmine Iced Tea",
+      "price": "6.75",
+      "description": "Iced jasmine green tea, peach purée, fresh mint, tapioca pearls.",
+      "category": "fruit",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "watermelon-mint",
+      "name": "Watermelon Mint Cooler",
+      "price": "7.25",
+      "description": "Fresh watermelon juice, mint, green tea, watermelon popping boba.",
+      "category": "fruit",
+      "tags": ["vegan", "seasonal"],
+      "featured": false
+    },
+    {
+      "id": "mango-tango",
+      "name": "Mango Tango Smoothie",
+      "price": "8.00",
+      "description": "Alphonso mango, passion fruit, coconut milk, lychee popping pearls.",
+      "category": "smoothie",
+      "tags": ["new", "vegan"],
+      "featured": true
+    },
+    {
+      "id": "mixed-berry",
+      "name": "Mixed Berry Blast",
+      "price": "7.75",
+      "description": "Blueberry, strawberry, blackberry, oat milk, honey, tapioca pearls.",
+      "category": "smoothie",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "pineapple-coconut",
+      "name": "Pineapple Coconut Dream",
+      "price": "7.75",
+      "description": "Fresh pineapple, coconut cream, lime, coconut jelly boba.",
+      "category": "smoothie",
+      "tags": ["vegan", "popular"],
+      "featured": false
+    },
+    {
+      "id": "brown-sugar-coffee",
+      "name": "Brown Sugar Coffee Boba",
+      "price": "8.25",
+      "description": "Cold brew coffee, brown sugar, oat milk, espresso-infused tapioca pearls.",
+      "category": "coffee",
+      "tags": ["popular"],
+      "featured": false
+    },
+    {
+      "id": "vanilla-latte",
+      "name": "Vanilla Latte Boba",
+      "price": "8.00",
+      "description": "Espresso, oat milk, Madagascar vanilla, tapioca pearls.",
+      "category": "coffee",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "mocha-shake",
+      "name": "Mocha Boba Shake",
+      "price": "8.50",
+      "description": "Double espresso, dark chocolate, whole milk, blended with pearls.",
+      "category": "coffee",
+      "tags": ["popular"],
+      "featured": false
+    },
+    {
+      "id": "lavender-matcha",
+      "name": "Lavender Honey Matcha",
+      "price": "8.50",
+      "description": "Ceremonial matcha, lavender syrup, local honey, oat milk, crystal boba.",
+      "category": "season",
+      "tags": ["seasonal", "new"],
+      "featured": false
+    },
+    {
+      "id": "peach-oolong-cloud",
+      "name": "Peach Oolong Cloud",
+      "price": "8.25",
+      "description": "Cold brewed oolong, fresh peach, salted cream foam, peach boba.",
+      "category": "season",
+      "tags": ["seasonal"],
+      "featured": false
+    },
+    {
+      "id": "hibiscus-lemonade",
+      "name": "Hibiscus Lemonade Boba",
+      "price": "7.75",
+      "description": "Dried hibiscus tea, fresh squeezed lemon, agave, rainbow jelly.",
+      "category": "season",
+      "tags": ["seasonal", "vegan"],
+      "featured": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+
+# Required for Netlify Identity (Git Gateway)
+[[plugins]]
+  package = "@netlify/plugin-identity"
+
+[dev]
+  port = 8888
+  autoLaunch = false
